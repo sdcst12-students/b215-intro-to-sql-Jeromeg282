@@ -22,3 +22,17 @@ retrieve a record by phone number and display all of the information
 You will need to create the table yourself. Consider what data types you will
 need to use.
 """
+
+import sqlite3
+
+file = 'dbase.db'
+connection = sqlite3.connect(file)
+print(connection)
+query = ''
+cursor=connection.cursor()
+
+cursor.execute(query)
+
+
+def decision():
+    
